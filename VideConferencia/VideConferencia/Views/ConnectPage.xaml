@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VideConferencia.Views.ConnectPage"
+             Title="{Binding Title}"
+             >
+    <StackLayout Orientation="Vertical">
+
+        <Label Text="Room"
+           Margin="20" HorizontalTextAlignment="Center" />
+
+        <Entry x:Name="RoomName" 
+           Margin="20" HeightRequest="40" 
+           Placeholder="&lt;room name&gt;" 
+           HorizontalTextAlignment="Center" 
+           PlaceholderColor="#1AFFFFFF" 
+           Text="{Binding RoomName}" 
+           IsSpellCheckEnabled="false" 
+           IsTextPredictionEnabled="false" />
+
+        <Button x:Name="NextButton" 
+                Margin="20" WidthRequest="200" 
+                HeightRequest="60" Text="Uno a uno" 
+                Clicked="Handle_OneToOne_Clicked"/>
+
+        <Button x:Name="NextMultiButton" Margin="20" 
+            WidthRequest="200" HeightRequest="60" 
+            Text="Grupo" Clicked="Handle_Group_Clicked" />
+    </StackLayout>
+</ContentPage>
