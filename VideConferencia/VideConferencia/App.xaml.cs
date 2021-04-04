@@ -7,7 +7,7 @@ namespace VideConferencia
 {
     public partial class App : Application
     {
-        public static string KeyApi = "513ea304620949ab8024fbbe99573ceb";//"dee8f30897584b3a9220a0fcd42fec33"
+        public static string KeyApi = "API_KEY";
         public App()
         {
             InitializeComponent();
